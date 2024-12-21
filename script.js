@@ -16,7 +16,6 @@ const message = document.getElementById("message");
 
 const snow = document.getElementById("snow");
 
-
 function createSnow() {
   const numberOfSnowflakes = 100;
 
@@ -57,6 +56,8 @@ function updateCountdown() {
   }
 }
 
-createSnow();
-updateCountdown();
-setInterval(updateCountdown, 1000);
+window.onload = () => {
+  createSnow();
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+};
