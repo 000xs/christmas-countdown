@@ -91,7 +91,7 @@ header {
 h1 {
     font-size: 4.5rem;
     background: linear-gradient(to right, var(--primary-red), var(--gold));
-
+    -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 1rem;
     position: relative;
